@@ -164,6 +164,7 @@ func ProcessInnerTemplate(page *Page, args []string) {
 	}
 
 	page.SetContent(buffer.String())
+	page.raw = page.Content()
 }
 
 func ProcessTemplate(page *Page, args []string) {
